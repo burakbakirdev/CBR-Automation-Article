@@ -20,7 +20,7 @@ async function getToken(username, password, domainName) {
             },
             scope: {
                 project: {
-                    name: "tr-west-1",
+                    name: process.env.REGION,
                 },
             },
         },
