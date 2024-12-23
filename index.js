@@ -238,13 +238,13 @@ async function sendEmailWithReport(filePath, fileName, recipients) {
         port: 587,
         secure: false,
         auth: {
-            user: "fburakbakir@gmail.com",
+            user: "example@example.com",
             pass: process.env.SMTP_PASS,
         },
     });
 
     const mailOptions = {
-        from: "fburakbakir@gmail.com",
+        from: "example@example.com",
         to: recipients.join(","),
         subject: fileName,
         text: `Please review the attached daily CBR report for ${fileName}`,
